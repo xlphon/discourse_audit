@@ -1,0 +1,24 @@
+# Main datasets for the first two steps.
+# Start small in Colab, then increase n_docs after the pipeline runs successfully.
+datasets:
+  fineweb:
+    dataset_id: HuggingFaceFW/fineweb
+    config: sample-10BT
+    split: train
+    text_col: text
+    n_docs: 5000
+
+  fineweb_edu:
+    dataset_id: HuggingFaceFW/fineweb-edu
+    config: sample-10BT
+    split: train
+    text_col: text
+    n_docs: 5000
+
+# Optional later:
+#  dolma:
+#    dataset_id: allenai/dolma
+#    config: null
+#    split: train
+#    text_col: text
+#    n_docs: 5000
